@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="DialogLoading" parent="android:style/Theme.Dialog">
+        <!-- 是否浮现在activity之上 (内容会居中显示并靠左右有距离)-->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置透明下面两个一定要同时设置 -->
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 设置模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 去掉边框（测试时没发现其作用） -->
+        <item name="android:windowFrame">@null</item>
+
+    </style>
+
+
+</resources>
