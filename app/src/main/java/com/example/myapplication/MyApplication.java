@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.app.Application;
 
+import com.example.myapplication.utils.SpUtils;
 import com.orhanobut.logger.LogLevel;
 import com.orhanobut.logger.Logger;
 
@@ -17,6 +18,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         context = this;
+        SpUtils.init(this);
         initLogger();
         appComponent = DaggerAppComponent.builder().appModule(new AppModule(this)).build();
     }

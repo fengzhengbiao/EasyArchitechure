@@ -76,7 +76,6 @@ public class DialogActivity extends Activity {
         @Override
         public void onReceive(Context context, Intent intent) {
             finish();
-            overridePendingTransition(0,R.anim.fade_out);
         }
     }
 }
